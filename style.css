@@ -1,0 +1,30 @@
+body {
+  font-family: "Kanit", sans-serif;
+}
+.top-heading {
+  font-family: "Berkshire Swash", cursive;
+  color: #d3e502;
+}
+
+header {
+  /* background-image: url(images/banner-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  height: 85vh;
+}
+#favourite-part {
+  color: #ff6355;
+}
+#mbappe-banner {
+  position: relative;
+  top: 135px;
+}
+#mbappe-banner {
+  background-image: url(images/shape-image.png);
+}
+#psg-logo {
+  position: relative;
+  left: 2.5rem;
+  bottom: 4rem;
+  z-index: 10;
+}
