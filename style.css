@@ -75,3 +75,6 @@ input[type=text]{
 .dollar{
   color: #FFC107;
 }
+a :hover{
+  color:#FFC107;
+}
