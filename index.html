@@ -30,9 +30,12 @@
 
     <!-- Style Sheet -->
     <link rel="stylesheet" href="style.css" />
-  </head>
 
+
+
+  </head>
   <body>
+
     <!-- Header Section Starts -->
     <header class="bg-black">
       <section class="pt-5 text-center">
@@ -66,7 +69,7 @@
 
       <section class="mt-2 container">
         <div class="row gap-5">
-          <div class="col-7 mt-3">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7 mt-3">
             <div class="row row-cols-1 row-cols-md-3 g-4 pt-4">
               <div class="col">
                 <div class="card">
@@ -80,7 +83,7 @@
                     </p>
                     <button
                       type="button"
-                      class="btn btn-primary px-5 select-btn disabled"
+                      class="btn btn-primary px-5 select-btn"
                     >
                       Select
                     </button>
@@ -271,12 +274,14 @@
 
           <!-- Selected Player List Starts -->
 
-          <div class="col-4 text-white mt-5 pb-5">
+          <div
+            class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 text-white mt-5 pb-5"
+          >
             <section id="selected-players" class="bg-black mt-1">
-              <div class="px-5 py-4">
+              <div class="py-4 text-center">
                 <h4 class="display-6 fw-bold">Selected - V</h4>
                 <img
-                  class="img-fluid ms-5"
+                  class="img-fluid ms-2 mb-3"
                   src="images/red-underline.png"
                   alt=""
                 />
@@ -298,10 +303,10 @@
             <section id="budget-section" class="mt-4 bg-black">
               <!-- Player Cost Area -->
 
-              <div class="px-5 py-4">
+              <div class="py-4 text-center">
                 <h4 class="display-6 fw-bold ms-5">Budget</h4>
                 <img
-                  class="img-fluid ms-5"
+                  class="img-fluid ps-5 mb-4"
                   src="images/red-underline.png"
                   alt=""
                 />
@@ -348,7 +353,7 @@
                   name=""
                   id=""
                   placeholder="$ Enter Amount"
-                />
+                /> <br>
 
                 <button
                   type="button"
@@ -374,7 +379,7 @@
     </main>
 
     <!-- Footer Section Starts -->
-    <footer class="bg-black text-center text-white">
+    <footer class="bg-black text-center text-white container-fluid">
       <section class="py-5">
         <div class="fs-6">
           <p>Copyright <span class="px-2"> © </span> 2022</p>
