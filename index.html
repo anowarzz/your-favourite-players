@@ -30,12 +30,8 @@
 
     <!-- Style Sheet -->
     <link rel="stylesheet" href="style.css" />
-
-
-
   </head>
   <body>
-
     <!-- Header Section Starts -->
     <header class="bg-black">
       <section class="pt-5 text-center">
@@ -58,10 +54,8 @@
 
     <main class="py-5">
       <!-- Card Section Starts -->
-      <div class="pt-5 pb-3 text-center">
-        <h2
-          id="main-section-heading"
-          class="display-4 text center text-warning"
+      <div class="pt-5 pb-3 text-center container">
+        <h2 class="display-4 text center text-warning"
         >
           Select Your Top Five Favourite Players
         </h2>
@@ -69,7 +63,9 @@
 
       <section class="mt-2 container">
         <div class="row gap-5">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7 mt-3">
+          <div
+            class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7 mt-3"
+          >
             <div class="row row-cols-1 row-cols-md-3 g-4 pt-4">
               <div class="col">
                 <div class="card">
@@ -288,13 +284,13 @@
               </div>
 
               <div class="fs-6 fw-bold">
-                <ol class="pb-5 ms-3">
+                <!-- <ol class="pb-5 ms-3">
                   <li class="ps-3 pb-2">Leonel Messi</li>
                   <li class="ps-3 pb-2">Neymar Jr</li>
                   <li class="ps-3 pb-2">Kylian Mbappé</li>
                   <li class="ps-3 pb-2">Vítor Machado</li>
                   <li class="ps-3 pb-2">Vítor Machado</li>
-                </ol>
+                </ol> -->
               </div>
             </section>
 
@@ -314,7 +310,7 @@
 
               <div class="input-fields text-center">
                 <p class="d-inline ps-4 pe-3 fs-6">Per Player</p>
-                <input
+                <input id="per-player-expense"
                   class="fs-6 rounded-1 py-1 px-3 me-2 w-50"
                   type="text"
                   name=""
@@ -322,7 +318,7 @@
                   placeholder="$ Enter Amount"
                 />
 
-                <button
+                <button id="calculate-btn"
                   type="button"
                   class="btn px-5 calculate-btn mb-5 mt-4 fw-bold w-50"
                 >
@@ -331,13 +327,13 @@
 
                 <h5 class="fw-bold mb-5">
                   Player Expenses : <span class="dollar fw-bold">$</span>
-                  <span class="text-info">00</span>
+                  <span id="player-total-expense" class="text-info">00</span>
                 </h5>
 
                 <!-- Total Cost Area -->
 
                 <p class="d-inline px-2">Manager</p>
-                <input
+                <input id="manager-expense"
                   class="fs-6 rounded-1 py-1 px-3 me-2 w-50 mb-3"
                   type="text"
                   name=""
@@ -347,15 +343,16 @@
                 <br />
 
                 <p class="d-inline px-3">Coach</p>
-                <input
+                <input id="coach-expense"
                   class="fs-6 rounded-1 py-1 px-3 me-2 w-50"
                   type="text"
                   name=""
                   id=""
                   placeholder="$ Enter Amount"
-                /> <br>
+                />
+                <br />
 
-                <button
+                <button id="calculate-total-btn"
                   type="button"
                   class="btn px-5 calculate-btn mb-5 mt-4 fw-bold"
                 >
@@ -369,7 +366,7 @@
                 <h5 class="fw-bold">Total</h5>
                 <h5 class="mb-5">
                   <span class="dollar fw-bold">$</span
-                  ><span class="fw-bold text-info"> 1500</span>
+                  ><span id="all-total-expense" class="fw-bold text-info"> 1500</span>
                 </h5>
               </div>
             </section>
@@ -422,5 +419,8 @@
         </div>
       </section>
     </footer>
+
+    <script src="js/common-functions.js"></script>
+    <script src="js/calculation.js"></script>
   </body>
 </html>
