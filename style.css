@@ -20,33 +20,31 @@ header {
   color: #ff6355;
 }
 
-
 /*  Main section style */
 
-main{
-  background-color:#272525;
+main {
+  background-color: #272525;
 }
-.card-title{
+.card-title {
   color: yellow;
 }
-.card-text{
-  color:#11EC85;
-  
+.card-text {
+  color: #11ec85;
 }
-.select-btn{
+.select-btn {
   border: none;
   text-decoration: none;
   font-size: 1rem;
   color: white;
   padding: 0.5rem 2rem;
   background-color: #dd0000;
-  box-shadow: inset 0 0 0 0 #7D3C98;
+  box-shadow: inset 0 0 0 0 #7d3c98;
   transition: ease-in-out 0.3s;
   outline: none;
 }
 
 .select-btn:hover {
-  box-shadow: inset 300px 0 0 0 #7D3C98 ;
+  box-shadow: inset 300px 0 0 0 #7d3c98;
   cursor: pointer;
-  color:white;
+  color: white;
 }
