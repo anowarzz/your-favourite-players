@@ -5,7 +5,8 @@ header {
 }
 .top-heading {
   font-family: "Berkshire Swash", cursive;
-  color: #d3e502;
+  /* color: #d3e502; */
+  color:yellow;
 }
 body {
   font-family: "Manrope", sans-serif;
@@ -25,6 +26,8 @@ header {
 main {
   background-color: #272525;
 }
+
+
 .card-title {
   color: yellow;
 }
