@@ -1,10 +1,23 @@
+// ------------- Functions To Add players In Favourites List -------------//
+
+function addToFavourites(){
+    console.log("added to favourites");
+    
+}
+
+
+
+
+
+
+//  --------------  Functions For Expense Calculation Section ---------------//
+
 // 1. To get value from input field  ---------->
 function getInputFieldValueById(inputFieldId) {
   const inputField = document.getElementById(inputFieldId);
   const inputFieldValueString = inputField.value;
   const inputFieldAmount = parseFloat(inputFieldValueString);
   return inputFieldAmount;
-  inputField.value = "";
 }
 
 // 2. To get value from Text element ------->

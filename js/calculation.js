@@ -1,14 +1,8 @@
 
-
-
-
-
-
-
-
-// Player Expennses Calculation.
+// Player Expense Calculation ---------->
 
 // Adding event listener to the  calculate button.
+
 document.getElementById("calculate-btn").addEventListener("click", function(){
 
     // setting All player expense to display
@@ -18,12 +12,10 @@ document.getElementById("calculate-btn").addEventListener("click", function(){
 
 
 
-
-
-
 // Total Expense calculation  ------>
 
-//  Adding event listener to Calculate total button.
+//  Adding event listener to the Calculate total button.
+
 document.getElementById("calculate-total-btn")
   .addEventListener("click", function () {
 
@@ -32,7 +24,6 @@ document.getElementById("calculate-total-btn")
 
     // Getting value from coach expense field.
     const coachExpense = getInputFieldValueById("coach-expense-field");
-
 
     // Total expense calculation.
     const totalExpense = playerTotalExpense() + managerExpense + coachExpense;
