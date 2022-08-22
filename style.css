@@ -13,7 +13,6 @@ body {
 }
 
 header {
-  background-color: black;
   height: 90vh;
 }
 
@@ -28,30 +27,51 @@ main {
 }
 
 
-.card-title {
-  color: yellow;
-}
+/* Card Section style */
 .card-text {
   color: #11ec85;
 }
-.select-btn {
-  border: none;
-  text-decoration: none;
-  font-size: 1rem;
-  color: white;
-  padding: 0.5rem 2rem;
-  background-color: #dd0000;
-  box-shadow: inset 0 0 0 0 #7d3c98;
-  transition: ease-in-out 0.3s;
-  outline: none;
+
+
+.select-btn{
+    background-image: linear-gradient(to right, #134E5E 0%, #71B280  51%, #134E5E  100%);
+    margin: 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 400% auto;
+    color: white; 
+  }
+
+  .select-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+.btn{
+  border-radius:0px;
 }
 
-.select-btn:hover {
-  box-shadow: inset 300px 0 0 0 #7d3c98;
-  cursor: pointer;
-  color: white;
+
+/* Calculation Area Style */
+
+input[type=text]{
+  background-color: #f7f2f2;
+  font-weight: bold;
+
 }
 
-/* #selected-players{
-  color:#11ec85;
-} */
+
+.calculate-btn{
+  background-color: #FFC107;
+}
+
+.calculate-btn:hover{
+  background-color: #1a69df;
+  color: black;
+}
+
+.dollar{
+  color: #FFC107;
+}
