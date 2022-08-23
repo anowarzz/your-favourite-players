@@ -24,8 +24,8 @@ function addToFavourites(player){
     li.style.paddingLeft = '15px';
     playerNameList.appendChild(li);
 
-    // Displaying Total Number Of selected players ------->
-    
+    // Displaying Total Number Of selected players On Top------->
+    setTextElementValueById("total-selected-display", selectedPlayersNumber + 1);
     
     // Disabling buttons after click ----------->
     player.disabled = true;
