@@ -70,6 +70,7 @@ document.getElementById("calculate-total-btn").addEventListener("click", functio
       return;
     } else if (managerExpense < 0 || coachExpense < 0) {
       alert("Please Enter a Positive Value");
+      return;
     }
 
     // Total expense calculation -------->
@@ -77,5 +78,5 @@ document.getElementById("calculate-total-btn").addEventListener("click", functio
 
     // Setting Final total expense amount to display ---------->
     setTextElementValueById("all-total-expense", totalExpense);
-    
+
   });

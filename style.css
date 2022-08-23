@@ -33,7 +33,7 @@ main {
 }
 
 
-.select-btn{
+.select-btn, .clear-btn{
     background-image: linear-gradient(to right, #134E5E 0%, #71B280  51%, #134E5E  100%);
     margin: 10px;
     text-align: center;
@@ -47,6 +47,13 @@ main {
     color: #fff;
     text-decoration: none;
   }
+
+  .clear-btn:hover {
+    background-position: right center;
+    color:aqua;
+    text-decoration: none;
+  }
+ 
  
 
 .btn{
