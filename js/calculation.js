@@ -20,7 +20,12 @@ function addToFavourites(player){
   else{
     const li = document.createElement("li");
     li.innerText = playerName;
+    li.style.paddingTop = '8px';
+    li.style.paddingLeft = '15px';
     playerNameList.appendChild(li);
+
+    // Displaying Total Number Of selected players ------->
+    
     
     // Disabling buttons after click ----------->
     player.disabled = true;
