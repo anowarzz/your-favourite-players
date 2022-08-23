@@ -1,14 +1,3 @@
-// ------------- Functions To Add players In Favourites List -------------//
-
-function addToFavourites(){
-    console.log("added to favourites");
-    
-}
-
-
-
-
-
 
 //  --------------  Functions For Expense Calculation Section ---------------//
 
@@ -28,17 +17,23 @@ function getTextElementValueById(elementId) {
   return textElementValue;
 }
 
-// 3. To set new value in text element --------->
+// 3. --------- To set new value in text element --------- //
 
 function setTextElementValueById(elementId, newValue) {
   const textElement = document.getElementById(elementId);
   textElement.innerText = newValue;
 }
 
-// 4. Calculating all player expense together ---->
+
+// 4.  ------- Calculating all player expense together ---------- //
 
 function playerTotalExpense() {
+  // per player expense from input  field ------ >
   const perPlayerExpense = getInputFieldValueById("per-player-expense-field");
-  const totalPlayerExpense = perPlayerExpense * 5;
+  // Total player number from OL ----- >
+  const selectedPlayers = document.getElementById("selected-players")
+  const totalSelectedPlayers = selectedPlayers.children;
+ // player expense calculation ------->
+  const totalPlayerExpense = perPlayerExpense * totalSelectedPlayers.length;
   return totalPlayerExpense;
 }
