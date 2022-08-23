@@ -1,5 +1,5 @@
-
 //  --------------  Functions For Expense Calculation Section ---------------//
+
 
 // 1. To get value from input field  ---------->
 function getInputFieldValueById(inputFieldId) {
@@ -8,6 +8,8 @@ function getInputFieldValueById(inputFieldId) {
   const inputFieldAmount = parseFloat(inputFieldValueString);
   return inputFieldAmount;
 }
+
+
 
 // 2. To get value from Text element ------->
 function getTextElementValueById(elementId) {
@@ -25,15 +27,19 @@ function setTextElementValueById(elementId, newValue) {
 }
 
 
+
+
 // 4.  ------- Calculating all player expense together ---------- //
 
 function playerTotalExpense() {
   // per player expense from input  field ------ >
   const perPlayerExpense = getInputFieldValueById("per-player-expense-field");
+
   // Total player number from OL ----- >
-  const selectedPlayers = document.getElementById("selected-players")
+  const selectedPlayers = document.getElementById("selected-players");
   const totalSelectedPlayers = selectedPlayers.children;
- // player expense calculation ------->
-  const totalPlayerExpense = perPlayerExpense * totalSelectedPlayers.length;
+  const allSelectedPlayers  = totalSelectedPlayers.length;
+  // player expense calculation ------->
+  const totalPlayerExpense = perPlayerExpense * allSelectedPlayers;
   return totalPlayerExpense;
 }

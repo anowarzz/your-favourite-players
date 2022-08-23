@@ -55,8 +55,7 @@
     <main class="py-5">
       <!-- Card Section Starts -->
       <div class="pt-5 pb-3 text-center container">
-        <h2 class="display-4 text center text-warning"
-        >
+        <h2 class="display-4 text center text-warning">
           Select Your Top Five Favourite Players
         </h2>
       </div>
@@ -77,7 +76,8 @@
                       <img class="px-2" src="images/football.svg" alt="" />118
                       Assist
                     </p>
-                    <button onclick="addToFavourites(this)"
+                    <button
+                      onclick="addToFavourites(this)"
                       type="button"
                       class="btn btn-primary px-5 select-btn"
                     >
@@ -99,7 +99,8 @@
                         alt=""
                       />126 Assist
                     </p>
-                    <button onclick="addToFavourites(this)"
+                    <button
+                      onclick="addToFavourites(this)"
                       type="button"
                       class="btn btn-primary px-5 select-btn"
                     >
@@ -121,7 +122,8 @@
                         alt=""
                       />99 Assist
                     </p>
-                    <button onclick="addToFavourites(this)"
+                    <button
+                      onclick="addToFavourites(this)"
                       type="button"
                       class="btn btn-primary px-5 select-btn"
                     >
@@ -143,7 +145,8 @@
                         alt=""
                       />113 Assist
                     </p>
-                    <button onclick="addToFavourites(this)"
+                    <button
+                      onclick="addToFavourites(this)"
                       type="button"
                       class="btn btn-primary px-5 select-btn"
                     >
@@ -165,7 +168,8 @@
                         alt=""
                       />119 Assist
                     </p>
-                    <button onclick="addToFavourites(this)"
+                    <button
+                      onclick="addToFavourites(this)"
                       type="button"
                       class="btn btn-primary px-5 select-btn"
                     >
@@ -187,7 +191,8 @@
                         alt=""
                       />98 Assist
                     </p>
-                    <button onclick="addToFavourites(this)"
+                    <button
+                      onclick="addToFavourites(this)"
                       type="button"
                       class="btn btn-primary px-5 select-btn"
                     >
@@ -208,7 +213,8 @@
                         alt=""
                       />94 Assist
                     </p>
-                    <button onclick="addToFavourites(this)"
+                    <button
+                      onclick="addToFavourites(this)"
                       type="button"
                       class="btn btn-primary px-5 select-btn"
                     >
@@ -230,7 +236,8 @@
                         alt=""
                       />91 Assist
                     </p>
-                    <button onclick="addToFavourites(this)"
+                    <button
+                      onclick="addToFavourites(this)"
                       type="button"
                       class="btn btn-primary px-5 select-btn"
                     >
@@ -256,7 +263,8 @@
                         alt=""
                       />80 Assist
                     </p>
-                    <button onclick="addToFavourites(this)"
+                    <button
+                      onclick="addToFavourites(this)"
                       type="button"
                       class="btn btn-primary px-5 select-btn"
                     >
@@ -275,7 +283,10 @@
           >
             <section class="bg-black mt-1">
               <div class="py-4 text-center">
-                <h4 class="display-6 fw-bold">Selected - <span class="text-info" id="total-selected-display">0</span></h4>
+                <h4 class="display-6 fw-bold">
+                  Selected -
+                  <span class="text-info" id="total-selected-display">0</span>
+                </h4>
                 <img
                   class="img-fluid ms-2 mb-3"
                   src="images/red-underline.png"
@@ -284,11 +295,7 @@
               </div>
 
               <div class="fs-6 fw-bold">
-                <ol id="selected-players" class="pb-5">
-
-
-                </ol>
-               
+                <ol id="selected-players" class="pb-5"></ol>
               </div>
             </section>
 
@@ -308,7 +315,8 @@
 
               <div class="input-fields text-center">
                 <p class="d-inline ps-4 pe-3 fs-6">Per Player</p>
-                <input id="per-player-expense-field"
+                <input
+                  id="per-player-expense-field"
                   class="fs-6 rounded-1 py-1 px-3 me-2 w-50"
                   type="text"
                   name=""
@@ -316,7 +324,8 @@
                   placeholder="$ Enter Amount"
                 />
 
-                <button id="calculate-btn"
+                <button
+                  id="calculate-btn"
                   type="button"
                   class="btn px-5 calculate-btn mb-5 mt-4 fw-bold w-50"
                 >
@@ -331,7 +340,8 @@
                 <!-- Total Cost Area -->
 
                 <p class="d-inline px-2">Manager</p>
-                <input id="manager-expense-field"
+                <input
+                  id="manager-expense-field"
                   class="fs-6 rounded-1 py-1 px-3 me-2 w-50 mb-3"
                   type="text"
                   name=""
@@ -341,7 +351,8 @@
                 <br />
 
                 <p class="d-inline px-3">Coach</p>
-                <input id="coach-expense-field"
+                <input
+                  id="coach-expense-field"
                   class="fs-6 rounded-1 py-1 px-3 me-2 w-50"
                   type="text"
                   name=""
@@ -350,7 +361,8 @@
                 />
                 <br />
 
-                <button id="calculate-total-btn"
+                <button
+                  id="calculate-total-btn"
                   type="button"
                   class="btn px-5 calculate-btn mb-5 mt-4 fw-bold"
                 >
@@ -363,8 +375,10 @@
               <div class="d-flex justify-content-around">
                 <h5 class="fw-bold">Total</h5>
                 <h5 class="mb-5">
-                  <span class="dollar fw-bold">$</span
-                  > <span id="all-total-expense" class="fw-bold text-info">00</span>
+                  <span class="dollar fw-bold">$</span>
+                  <span id="all-total-expense" class="fw-bold text-info"
+                    >00</span
+                  >
                 </h5>
               </div>
             </section>
